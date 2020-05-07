@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Kanak Agrawal
+	</title>
+	<meta charset="utf-8" />  
+	 <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<style>
+	body{
+		height:100%;
+		width:100%;
+		overflow:auto;
+		margin:0px;
+		padding:0px;
+		background-color:pink;
+	}
+	h1 span{
+		position: relative;
+	
+		top:40px;
+  		display: inline-block;
+		font-size: 90px;
+		color: #212f3c;
+		text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0  5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+		animation: bounce 0.3s ease infinite alternate;
+	}
+
+h1 span:nth-child(2) {
+ animation-delay: 0.7s;
+}
+
+h1 span:nth-child(3) {
+animation-delay: 0.7s;
+}
+
+h1 span:nth-child(4) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(5) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(6) {
+-webkit-animation-delay: 0.7s;
+}
+h1 span:nth-child(7) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(8) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(9) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(10) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(11) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(12) {
+-webkit-animation-delay: 0.7s;
+}
+
+/* ANIMATION */
+@keyframes bounce {
+	100% {
+	   top:20px;
+	   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,0 50px 25px rgba(0, 0, 0, 0.2);
+	}
+}
+.first{
+	width:100%;
+	
+	height:600px;
+	margin:0px;
+}
+.navbar{
+	height:100px;
+	width:100%;
+	background-color: black;
+	margin:0px;
+	padding-top:0px;
+	position:fixed;
+	z-index:2;
+}
+
+.inner-nav{
+	text-align:center;
+	width:60%;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+	color:grey;
+	font-size:28px;	
+}
+
+.inner-nav li{
+	float:left;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:28px;
+	list-style:none;
+	cursor:pointer;
+}
+
+.inner-nav li:hover{
+		color:white;
+	}
+
+#closebtn,#openbtn{
+	display:none;
+}
+.myname,.myimg{
+	display:inline-block;
+	float:left;
+
+	margin-top:10%;
+	margin-left:10%;
+}
+.myimg img{
+	width:300px;
+	height:300px;	
+}
+
+.myname{
+	display: inline-block;
+	float:left;
+}
+.aboutme{
+	width:100%;
+	
+	display:block;
+	margin:0px;
+	height:600px;
+}
+.intro,.skills{
+	width:50%;
+	height:60%;
+	float:left;
+	margin-left: 5%;
+	margin-right:5%;
+	
+	text-align: center;
+	margin-bottom:0px;
+	margin-top:10%;
+	padding-top:2%;
+
+}
+.skills{
+	width:30%;
+	text-align:left;
+	font-size:20px;
+}
+.skills h1{
+ font-size:32px;
+}
+
+.skills li{
+	left:40px;
+}
+
+@media screen and (max-width:1400px)
+{
+	.inner-nav{
+	   width:80%;
+	}
+}
+
+
+@media screen and (max-width:1100px)
+{
+	.inner-nav{
+		width:95%;
+	    font-size:25px;
+	}
+	.myimg,.myname{
+		margin-left:5%;
+		margin-top:15%;
+		margin-right:5%;
+	}
+	.myimg img{
+		width:250px;
+		height:250px;
+
+	}
+	.myname h1 span{
+		font-size:60px;
+	}
+}
+
+@media screen and (max-width:800px)
+{
+	.inner-nav{
+		display: none;
+	}
+	#openbtn{
+		display:inline-block;
+		float: right;
+		font-size:35px;
+		margin-right:20px;
+		margin-top: 20px;
+		color:white;
+		cursor:pointer;
+	}
+	.inner-nav li{
+		width:100%;
+		background-color:black;
+		margin:0px;
+		padding-bottom:9px;
+		color:grey;
+		cursor:pointer;
+	}
+	#closebtn{
+		display:inline-block;
+		float: right;
+		color:white;
+		font-weight:bold;
+		font-size:35px;
+		cursor:pointer;
+		margin-right: 60px;
+	}
+	h1 span{
+		font-size:70px;
+	}
+	.first{
+		height:800px;
+	}
+	.myimg{
+		display:block;
+		width:60%;
+		background-color:blue;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	.myimg img{
+		width:100%;
+		height:100%;
+	}
+	
+	.myname{
+		margin-top:10px;
+		text-align: center;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	
+	height:250px;
+	}
+	.myname h1{
+		letter-spacing:-5px;
+	}
+	.aboutme{
+		margin:0px;
+		padding:0px;
+		height:800px;
+	}
+	.skills,.intro{
+		float:none;
+		width:80%;
+		margin-top:0px;
+		min-height:200px;
+		max-height:350px;
+		margin-left:auto;
+		margin-right:auto;
+		padding:2%;
+		padding-top:0px;
+		padding-bottom:0px;
+	}
+	.skills{
+		margin-top:20px;
+		
+		text-align:center;
+
+	}
+	.skills li{
+		list-style:none;
+		line-height:35px;
+		
+	}
+}
+
+</style>
+
+</head>
+<body>
+	 <script type="text/javascript">
+      function openNavbar(){
+      	document.getElementById("openbtn").style.display="none";
+            document.getElementById("inner-nav-id").style.display="block";
+             	document.getElementById("closebtn").style.display="inline-block";
+            }
+
+        function closeNavbar(){
+        	document.getElementById("openbtn").style.display="inline-block";
+              document.getElementById("inner-nav-id").style.display="none";
+            }
+    </script>
+   
+	<div class="navbar">
+		<a class="openbar" id="openbtn" onclick="openNavbar()">
+          <i class="fa fa-bars"></i></a> 
+		<ul class="inner-nav" id="inner-nav-id">
+			<li>
+           <a class="closebar" id="closebtn" onclick="closeNavbar()">&times;</a></li>
+			<li><a href="#firstid">Home</a></li>
+			<li><a href="#aboutmeid">About me</a></li>
+			<li><a href="#">Resume</a></li>
+			<li>Portfolio</li>
+			<li>Timeline</li>
+			<li>Contact me<li>
+		</ul>
+
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	 <div class="first" id="firstid">
+	<div class="myimg">
+    	<img src="cleanindiateampage.jpg" alt="kanak agrawal0">
+    </div>
+	<div class="myname">
+		<h1>
+		  <span>K</span>
+		  <span>A</span>
+		  <span>N</span>
+		  <span>A</span>
+		  <span>K</span>
+		<br/>
+		  <span>A</span>
+		  <span>G</span>
+		  <span>R</span>
+		  <span>A</span>
+		  <span>W</span>
+		  <span>A</span>
+		  <span>L</span>
+		</h1>
+    </div>
+</div>
+    <div class="aboutme" id="aboutmeid">
+    	<div class="intro">
+    		<h1>ABOUT ME</h1>
+    		<h3>I'm a tech-enthusiast pursuing my Bachelors at Shri Govindram Seksaria Institute of Technology and Science.I am interested in the field of Mobile Development, Backend Development & Problem Solving. I loves to code and build beautiful responsive websites. My hardworking nature and rigorous commitment, sets me apart.</h3>
+    	</div>
+    	<div class="skills">
+    		<h1>SKILLS</h1>
+    		<ul>
+    			<li>C++</li>
+    			<li>Python</li>
+    			<li>Html</li>
+    			<li>Css</li>
+    			<li>Javascript</li>
+    		</ul>	
+    	</div> 
+    </div>
+    
+</body>
+</html>
