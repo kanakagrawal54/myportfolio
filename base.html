@@ -15,7 +15,7 @@
 		overflow:auto;
 		margin:0px;
 		padding:0px;
-		background-color:pink;
+		background-image:url("back.jpg");
 	}
 	h1 span{
 		position: relative;
@@ -78,9 +78,18 @@ h1 span:nth-child(12) {
 	   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,0 50px 25px rgba(0, 0, 0, 0.2);
 	}
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 .first{
 	width:100%;
-	
+	background-image:url("back.jpg");
 	height:600px;
 	margin:0px;
 }
@@ -101,7 +110,7 @@ h1 span:nth-child(12) {
 	margin-left:auto;
 	margin-right:auto;
 	height:100%;
-	color:grey;
+	
 	font-size:28px;	
 }
 
@@ -113,9 +122,14 @@ h1 span:nth-child(12) {
 	list-style:none;
 	cursor:pointer;
 }
-
-.inner-nav li:hover{
+.inner-nav li a{
+	text-decoration:none;
+	color:lightblue;
+}
+.inner-nav li a:hover{
 		color:white;
+		background-color:grey;
+		border-radius:4px;
 	}
 
 #closebtn,#openbtn{
@@ -130,7 +144,9 @@ h1 span:nth-child(12) {
 }
 .myimg img{
 	width:300px;
-	height:300px;	
+	height:300px;
+	border-radius:50%;
+	animation:fadeIn 7s ease;	
 }
 
 .myname{
@@ -139,10 +155,13 @@ h1 span:nth-child(12) {
 }
 .aboutme{
 	width:100%;
-	
+	background-image:url("back2.jpg");
 	display:block;
+	background-repeat:no-repeat;
 	margin:0px;
 	height:600px;
+	background-size:100%,600px;
+
 }
 .intro,.skills{
 	width:50%;
@@ -150,26 +169,72 @@ h1 span:nth-child(12) {
 	float:left;
 	margin-left: 5%;
 	margin-right:5%;
-	
+	color:white;
+	opacity:0.8;
 	text-align: center;
 	margin-bottom:0px;
 	margin-top:10%;
 	padding-top:2%;
+	animation:fadeIn 10s ease;
+	
 
+}
+.introdetail{
+	width:70%;
+	height:70%;
+	opacity:0.8;
+	
+	margin-right:auto;
+	margin-left: auto;
+	
 }
 .skills{
 	width:30%;
 	text-align:left;
 	font-size:20px;
 }
-.skills h1{
+.skills h1,.intro h1{
  font-size:32px;
+ color:cyan;
+opacity:0.7;
+ 
 }
 
 .skills li{
 	left:40px;
 }
 
+.contactme{
+	height:400px;
+	width:100%;
+	background-image:url("back.jpg");
+	padding-top:5%;
+	text-align:center;
+}
+ h4{
+	font-size:20px;
+	color:grey;
+}
+.contactblock{
+	width:380px;
+	height:40%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.contactblock li{
+	list-style:none;
+	padding-top:10px; 
+	text-align:left;
+	}
+.contactblock li a{
+	text-decoration:none;
+	font-size:20px;
+	color:black;
+}
+.contactblock li a:hover{
+	color:grey;
+	font-size:22px;
+}
 @media screen and (max-width:1400px)
 {
 	.inner-nav{
@@ -197,6 +262,7 @@ h1 span:nth-child(12) {
 	.myname h1 span{
 		font-size:60px;
 	}
+
 }
 
 @media screen and (max-width:800px)
@@ -234,18 +300,21 @@ h1 span:nth-child(12) {
 		font-size:70px;
 	}
 	.first{
-		height:800px;
+		height:900px;
+		margin-bottom:0px;
+
 	}
 	.myimg{
 		display:block;
 		width:60%;
-		background-color:blue;
 		margin-left:20%;
 		margin-right:20%;
 	}
 	.myimg img{
-		width:100%;
-		height:100%;
+		width:80%;
+		height:80%;
+		margin-right:10%;
+		margin-left:10%;
 	}
 	
 	.myname{
@@ -264,19 +333,24 @@ h1 span:nth-child(12) {
 		margin:0px;
 		padding:0px;
 		height:800px;
+		background-size:100%,800px;
+		background-size:cover;
 	}
 	.skills,.intro{
 		float:none;
 		width:80%;
-		margin-top:0px;
+		margin-top:-50px;
 		min-height:200px;
 		max-height:350px;
 		margin-left:auto;
 		margin-right:auto;
 		padding:2%;
-		padding-top:0px;
+		padding-top:30px;
 		padding-bottom:0px;
+		
+
 	}
+
 	.skills{
 		margin-top:20px;
 		
@@ -288,7 +362,40 @@ h1 span:nth-child(12) {
 		line-height:35px;
 		
 	}
+	
+
 }
+
+@media screen and (max-width:650px)
+{
+	.first{
+		height:800px;
+	}
+	.myimg img{
+			width:90%;
+			height:90%;
+			margin-right:5%;
+			margin-left:5%;
+			
+		}
+		
+		.introdetail{
+		width:90%;
+		margin-right:5%;
+		margin-left:5%;
+	}
+}
+
+@media screen and (max-width:450px)
+{
+	.contactme h4{
+		font-size:18px;
+	}
+	.contactblock{
+		margin-left:0px;
+	}
+}
+
 
 </style>
 
@@ -315,10 +422,10 @@ h1 span:nth-child(12) {
            <a class="closebar" id="closebtn" onclick="closeNavbar()">&times;</a></li>
 			<li><a href="#firstid">Home</a></li>
 			<li><a href="#aboutmeid">About me</a></li>
-			<li><a href="#">Resume</a></li>
-			<li>Portfolio</li>
-			<li>Timeline</li>
-			<li>Contact me<li>
+			<li><a href="https://drive.google.com/file/d/1olIgvuWdLWhvhO3tWlekJiq1XbRL62G4/view?usp=sharing" target="blank">Resume</a></li>
+			<li><a href="">Portfolio</a></li>
+			<li><a href="">Timeline</a></li>
+			<li><a href="">Contact me</a><li>
 		</ul>
 
 	</div>
@@ -328,7 +435,7 @@ h1 span:nth-child(12) {
 	<br/>
 	 <div class="first" id="firstid">
 	<div class="myimg">
-    	<img src="cleanindiateampage.jpg" alt="kanak agrawal0">
+    	<img src="kanak.jpeg" alt="kanak agrawal0">
     </div>
 	<div class="myname">
 		<h1>
@@ -351,7 +458,9 @@ h1 span:nth-child(12) {
     <div class="aboutme" id="aboutmeid">
     	<div class="intro">
     		<h1>ABOUT ME</h1>
+    		<div class="introdetail">
     		<h3>I'm a tech-enthusiast pursuing my Bachelors at Shri Govindram Seksaria Institute of Technology and Science.I am interested in the field of Mobile Development, Backend Development & Problem Solving. I loves to code and build beautiful responsive websites. My hardworking nature and rigorous commitment, sets me apart.</h3>
+    	</div>
     	</div>
     	<div class="skills">
     		<h1>SKILLS</h1>
@@ -361,9 +470,24 @@ h1 span:nth-child(12) {
     			<li>Html</li>
     			<li>Css</li>
     			<li>Javascript</li>
+    			<li>Django</li>
     		</ul>	
     	</div> 
     </div>
-    
+    <div class="contactme">
+    	
+    	<h1>Get in touch</h1>
+    	<h4>Got a project you would like me to work on?<br/> Or how about just a friendly chat?</h4>
+    	<div class="contactblock">
+    	<ul>
+    		<li><a href="mailto:kanakagrawal600@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> kanakagrawal600@gmail.com</a></li>
+    		<li><a href="https://www.linkedin.com/in/kanak-agrawal-8a926b17b"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    		<li><a href="https://github.com/kanakagrawal54"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+    		
+    		<li><a href="https://www.instagram.com/__ka54_"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+    		<li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> (+91) 6260990386</a></li>
+    	</ul>
+    </div>
+    </div>
 </body>
 </html>
