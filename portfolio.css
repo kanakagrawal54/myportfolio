@@ -1,0 +1,574 @@
+body{
+		height:100%;
+		width:100%;
+		overflow:auto;
+		margin:0px;
+		padding:0px;
+		background-image:url("back.jpg");
+	}
+	h1 span{
+		position: relative;
+	
+		top:40px;
+  		display: inline-block;
+		font-size: 90px;
+		color: #212f3c;
+		text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0  5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+		animation: bounce 0.3s ease infinite alternate;
+	}
+
+h1 span:nth-child(2) {
+ animation-delay: 0.7s;
+}
+
+h1 span:nth-child(3) {
+animation-delay: 0.7s;
+}
+
+h1 span:nth-child(4) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(5) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(6) {
+-webkit-animation-delay: 0.7s;
+}
+h1 span:nth-child(7) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(8) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(9) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(10) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(11) {
+-webkit-animation-delay: 0.7s;
+}
+
+h1 span:nth-child(12) {
+-webkit-animation-delay: 0.7s;
+}
+
+/* ANIMATION */
+@keyframes bounce {
+	100% {
+	   top:20px;
+	   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,0 50px 25px rgba(0, 0, 0, 0.2);
+	}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.first{
+	width:100%;
+	background-image:url("back.jpg");
+	height:600px;
+	margin:0px;
+}
+.navbar{
+	height:80px;
+	width:100%;
+	background-color: black;
+	margin:0px;
+	padding-top:0px;
+	position:fixed;
+	z-index:2;
+}
+
+.inner-nav{
+	text-align:center;
+	width:60%;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+	
+	font-size:28px;	
+}
+
+.inner-nav li{
+	float:left;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:28px;
+	list-style:none;
+	cursor:pointer;
+}
+.inner-nav li a{
+	text-decoration:none;
+	color:lightblue;
+}
+.inner-nav li a:hover{
+		color:white;
+		
+	}
+
+#closebtn,#openbtn{
+	display:none;
+}
+.myname,.myimg{
+	display:inline-block;
+	float:left;
+
+	margin-top:10%;
+	margin-left:10%;
+}
+.myimg img{
+	width:300px;
+	height:300px;
+	border-radius:50%;
+	animation:fadeIn 7s ease;	
+}
+
+.myname{
+	display: inline-block;
+	float:left;
+}
+.aboutme,.timelineouter{
+	width:100%;
+	background-image:url("back2.jpg");
+	display:block;
+	background-repeat:no-repeat;
+	margin:0px;
+	height:600px;
+	background-size:100%,600px;
+
+}
+.intro,.skills{
+	width:50%;
+	height:60%;
+	float:left;
+	margin-left: 5%;
+	margin-right:5%;
+	color:white;
+	opacity:0.8;
+	text-align: center;
+	margin-bottom:0px;
+	margin-top:10%;
+	padding-top:2%;
+	animation:fadeIn 10s ease;
+	
+
+}
+.introdetail{
+	width:70%;
+	height:70%;
+	opacity:0.8;
+	
+	margin-right:auto;
+	margin-left: auto;
+	
+}
+.skills{
+	width:30%;
+	text-align:left;
+	font-size:20px;
+}
+.skills h1,.intro h1{
+ font-size:32px;
+ color:cyan;
+opacity:0.7;
+ 
+}
+
+.skills li{
+	left:40px;
+}
+
+.contactme{
+	height:400px;
+	width:100%;
+	background-image:url("back.jpg");
+	padding-top:5%;
+	text-align:center;
+}
+ h4{
+	font-size:20px;
+	color:grey;
+}
+.contactblock{
+	width:380px;
+	height:40%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.contactblock li{
+	list-style:none;
+	padding-top:10px; 
+	text-align:left;
+	}
+.contactblock li a{
+	text-decoration:none;
+	font-size:20px;
+	color:black;
+}
+.contactblock li a:hover{
+	color:grey;
+	font-size:22px;
+}
+.timelineouter {
+ 
+  height:800px;
+  background-size: 100% 800px;
+  
+  margin-top:0px;
+  padding-top:10px;
+
+}
+.timeline{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	height:80%;
+	position: relative;
+
+
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:cyan;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding:1% 2%;
+  position: relative;
+ 
+  width: 45%;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 1%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  position: relative;
+  background-color: white;
+  border-radius: 6px;
+}
+.timelineouter h1{
+	color:cyan;
+	text-align: center;
+	font-size:35px;
+}
+.portfolio{
+	width:100%;
+	height:700px;
+	
+	margin-top:0px;
+	padding-top:0px;
+}
+.portfolio h1{
+	text-align: center;
+	font-size:35px;
+}
+.project{
+	width:20%;
+	background-color:#C7C7C7;
+    height:80%;
+	float: left;
+	margin-left:20%;
+	box-shadow:7px 7px 6px grey;
+}
+.projectimg img{
+	width:100%;
+	height:250px;
+}
+.projectinfo{
+	margin-top:20px;
+	width:80%;	
+	margin-left:10%;
+	margin-right:10%;
+}
+.copyright{
+	height:60px;
+	width:100%;
+	background-color:black;
+	color: grey;
+	text-align: center;
+	font-size:18px;
+	padding-top:10px;
+}
+@media screen and (max-width:1400px)
+{
+	.inner-nav{
+	   width:80%;
+	}
+	.project{
+		width:25%;
+		margin-left:16%;
+	}
+}
+
+
+@media screen and (max-width:1100px)
+{
+	.inner-nav{
+		width:95%;
+	    font-size:25px;
+	}
+	.myimg,.myname{
+		margin-left:5%;
+		margin-top:15%;
+		margin-right:5%;
+	}
+	.myimg img{
+		width:250px;
+		height:250px;
+
+	}
+	.myname h1 span{
+		font-size:60px;
+	}
+	.project{
+		width:30%;
+		margin-left:12%;
+	}
+}
+
+@media screen and (max-width:800px)
+{
+	.inner-nav{
+		display: none;
+	}
+	#openbtn{
+		display:inline-block;
+		float: right;
+		font-size:35px;
+		margin-right:20px;
+		margin-top: 20px;
+		color:white;
+		cursor:pointer;
+	}
+	.inner-nav li{
+		width:100%;
+		background-color:black;
+		margin:0px;
+		padding-bottom:9px;
+		color:grey;
+		cursor:pointer;
+	}
+	#closebtn{
+		display:inline-block;
+		float: right;
+		color:white;
+		font-weight:bold;
+		font-size:35px;
+		cursor:pointer;
+		margin-right: 60px;
+	}
+	h1 span{
+		font-size:70px;
+	}
+	.first{
+		height:900px;
+		margin-bottom:0px;
+
+	}
+	.myimg{
+		display:block;
+		width:60%;
+		margin-left:20%;
+		margin-right:20%;
+	}
+	.myimg img{
+		width:80%;
+		height:80%;
+		margin-right:10%;
+		margin-left:10%;
+	}
+	
+	.myname{
+		margin-top:10px;
+		text-align: center;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	
+	height:250px;
+	}
+	.myname h1{
+		letter-spacing:-5px;
+	}
+	.aboutme{
+		margin:0px;
+		padding:0px;
+		height:800px;
+		background-size:100%,800px;
+		background-size:cover;
+	}
+	.skills,.intro{
+		float:none;
+		width:80%;
+		margin-top:-50px;
+		min-height:200px;
+		max-height:350px;
+		margin-left:auto;
+		margin-right:auto;
+		padding:2%;
+		padding-top:30px;
+		padding-bottom:0px;
+		
+
+	}
+
+	.skills{
+		margin-top:20px;
+		
+		text-align:center;
+
+	}
+	.skills li{
+		list-style:none;
+		line-height:35px;
+		
+	}
+	.project{
+		width:35%;
+		margin-left:10%;
+	}
+
+}
+
+@media screen and (max-width:650px)
+{
+	.first{
+		height:800px;
+	}
+	.myimg img{
+			width:90%;
+			height:90%;
+			margin-right:5%;
+			margin-left:5%;
+			
+		}
+		
+		.introdetail{
+		width:90%;
+		margin-right:5%;
+		margin-left:5%;
+	}
+	.portfolio{
+		height:1400px;
+		background-size:100% 1400px;
+	}
+	.project{
+		float:none;
+		width:50%;
+		height:40%;
+		margin-bottom:0%;
+		margin-left:25%;
+		
+	}
+	.project2{
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 25px;
+
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right,.left {
+  left:0%;
+  }
+}
+@media screen and (max-width:450px)
+{
+	.contactme h4{
+		font-size:18px;
+	}
+	.contactblock{
+		margin-left:0px;
+	}
+	.project{
+		float:none;
+		width:80%;
+		height:40%;
+		margin-bottom:10%;
+		margin-left:10%;
+	
+	}
+}
