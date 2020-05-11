@@ -6,414 +6,12 @@
 	</title>
 	<meta charset="utf-8" />  
 	 <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+	 <link rel="stylesheet" type="text/css" href="portfolio.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/> 
-<style>
-	body{
-		height:100%;
-		width:100%;
-		overflow:auto;
-		margin:0px;
-		padding:0px;
-		background-image:url("back.jpg");
-	}
-	h1 span{
-		position: relative;
-	
-		top:40px;
-  		display: inline-block;
-		font-size: 90px;
-		color: #212f3c;
-		text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0  5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
-		animation: bounce 0.3s ease infinite alternate;
-	}
-
-h1 span:nth-child(2) {
- animation-delay: 0.7s;
-}
-
-h1 span:nth-child(3) {
-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(4) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(5) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(6) {
--webkit-animation-delay: 0.7s;
-}
-h1 span:nth-child(7) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(8) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(9) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(10) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(11) {
--webkit-animation-delay: 0.7s;
-}
-
-h1 span:nth-child(12) {
--webkit-animation-delay: 0.7s;
-}
-
-/* ANIMATION */
-@keyframes bounce {
-	100% {
-	   top:20px;
-	   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,0 50px 25px rgba(0, 0, 0, 0.2);
-	}
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-.first{
-	width:100%;
-	background-image:url("back.jpg");
-	height:600px;
-	margin:0px;
-}
-.navbar{
-	height:100px;
-	width:100%;
-	background-color: black;
-	margin:0px;
-	padding-top:0px;
-	position:fixed;
-	z-index:2;
-}
-
-.inner-nav{
-	text-align:center;
-	width:60%;
-	margin-top:0px;
-	margin-left:auto;
-	margin-right:auto;
-	height:100%;
-	
-	font-size:28px;	
-}
-
-.inner-nav li{
-	float:left;
-	margin-left:2%;
-	margin-right:2%;
-	margin-top:28px;
-	list-style:none;
-	cursor:pointer;
-}
-.inner-nav li a{
-	text-decoration:none;
-	color:lightblue;
-}
-.inner-nav li a:hover{
-		color:white;
-		background-color:grey;
-		border-radius:4px;
-	}
-
-#closebtn,#openbtn{
-	display:none;
-}
-.myname,.myimg{
-	display:inline-block;
-	float:left;
-
-	margin-top:10%;
-	margin-left:10%;
-}
-.myimg img{
-	width:300px;
-	height:300px;
-	border-radius:50%;
-	animation:fadeIn 7s ease;	
-}
-
-.myname{
-	display: inline-block;
-	float:left;
-}
-.aboutme{
-	width:100%;
-	background-image:url("back2.jpg");
-	display:block;
-	background-repeat:no-repeat;
-	margin:0px;
-	height:600px;
-	background-size:100%,600px;
-
-}
-.intro,.skills{
-	width:50%;
-	height:60%;
-	float:left;
-	margin-left: 5%;
-	margin-right:5%;
-	color:white;
-	opacity:0.8;
-	text-align: center;
-	margin-bottom:0px;
-	margin-top:10%;
-	padding-top:2%;
-	animation:fadeIn 10s ease;
-	
-
-}
-.introdetail{
-	width:70%;
-	height:70%;
-	opacity:0.8;
-	
-	margin-right:auto;
-	margin-left: auto;
-	
-}
-.skills{
-	width:30%;
-	text-align:left;
-	font-size:20px;
-}
-.skills h1,.intro h1{
- font-size:32px;
- color:cyan;
-opacity:0.7;
- 
-}
-
-.skills li{
-	left:40px;
-}
-
-.contactme{
-	height:400px;
-	width:100%;
-	background-image:url("back.jpg");
-	padding-top:5%;
-	text-align:center;
-}
- h4{
-	font-size:20px;
-	color:grey;
-}
-.contactblock{
-	width:380px;
-	height:40%;
-	margin-left:auto;
-	margin-right:auto;
-}
-.contactblock li{
-	list-style:none;
-	padding-top:10px; 
-	text-align:left;
-	}
-.contactblock li a{
-	text-decoration:none;
-	font-size:20px;
-	color:black;
-}
-.contactblock li a:hover{
-	color:grey;
-	font-size:22px;
-}
-@media screen and (max-width:1400px)
-{
-	.inner-nav{
-	   width:80%;
-	}
-}
-
-
-@media screen and (max-width:1100px)
-{
-	.inner-nav{
-		width:95%;
-	    font-size:25px;
-	}
-	.myimg,.myname{
-		margin-left:5%;
-		margin-top:15%;
-		margin-right:5%;
-	}
-	.myimg img{
-		width:250px;
-		height:250px;
-
-	}
-	.myname h1 span{
-		font-size:60px;
-	}
-
-}
-
-@media screen and (max-width:800px)
-{
-	.inner-nav{
-		display: none;
-	}
-	#openbtn{
-		display:inline-block;
-		float: right;
-		font-size:35px;
-		margin-right:20px;
-		margin-top: 20px;
-		color:white;
-		cursor:pointer;
-	}
-	.inner-nav li{
-		width:100%;
-		background-color:black;
-		margin:0px;
-		padding-bottom:9px;
-		color:grey;
-		cursor:pointer;
-	}
-	#closebtn{
-		display:inline-block;
-		float: right;
-		color:white;
-		font-weight:bold;
-		font-size:35px;
-		cursor:pointer;
-		margin-right: 60px;
-	}
-	h1 span{
-		font-size:70px;
-	}
-	.first{
-		height:900px;
-		margin-bottom:0px;
-
-	}
-	.myimg{
-		display:block;
-		width:60%;
-		margin-left:20%;
-		margin-right:20%;
-	}
-	.myimg img{
-		width:80%;
-		height:80%;
-		margin-right:10%;
-		margin-left:10%;
-	}
-	
-	.myname{
-		margin-top:10px;
-		text-align: center;
-	width:90%;
-	margin-left:5%;
-	margin-right:5%;
-	
-	height:250px;
-	}
-	.myname h1{
-		letter-spacing:-5px;
-	}
-	.aboutme{
-		margin:0px;
-		padding:0px;
-		height:800px;
-		background-size:100%,800px;
-		background-size:cover;
-	}
-	.skills,.intro{
-		float:none;
-		width:80%;
-		margin-top:-50px;
-		min-height:200px;
-		max-height:350px;
-		margin-left:auto;
-		margin-right:auto;
-		padding:2%;
-		padding-top:30px;
-		padding-bottom:0px;
-		
-
-	}
-
-	.skills{
-		margin-top:20px;
-		
-		text-align:center;
-
-	}
-	.skills li{
-		list-style:none;
-		line-height:35px;
-		
-	}
-	
-
-}
-
-@media screen and (max-width:650px)
-{
-	.first{
-		height:800px;
-	}
-	.myimg img{
-			width:90%;
-			height:90%;
-			margin-right:5%;
-			margin-left:5%;
-			
-		}
-		
-		.introdetail{
-		width:90%;
-		margin-right:5%;
-		margin-left:5%;
-	}
-}
-
-@media screen and (max-width:450px)
-{
-	.contactme h4{
-		font-size:18px;
-	}
-	.contactblock{
-		margin-left:0px;
-	}
-}
-
-
-</style>
-
+    <script type="text/javascript" src="portfolio.js"></script>
 </head>
 <body>
-	 <script type="text/javascript">
-      function openNavbar(){
-      	document.getElementById("openbtn").style.display="none";
-            document.getElementById("inner-nav-id").style.display="block";
-             	document.getElementById("closebtn").style.display="inline-block";
-            }
-
-        function closeNavbar(){
-        	document.getElementById("openbtn").style.display="inline-block";
-              document.getElementById("inner-nav-id").style.display="none";
-            }
-    </script>
-   
+	
 	<div class="navbar">
 		<a class="openbar" id="openbtn" onclick="openNavbar()">
           <i class="fa fa-bars"></i></a> 
@@ -424,8 +22,8 @@ opacity:0.7;
 			<li><a href="#aboutmeid">About me</a></li>
 			<li><a href="https://drive.google.com/file/d/1olIgvuWdLWhvhO3tWlekJiq1XbRL62G4/view?usp=sharing" target="blank">Resume</a></li>
 			<li><a href="">Portfolio</a></li>
-			<li><a href="">Timeline</a></li>
-			<li><a href="">Contact me</a><li>
+			<li><a href="#timelineid">Timeline</a></li>
+			<li><a href="#contactmeid">Contact me</a><li>
 		</ul>
 
 	</div>
@@ -474,7 +72,54 @@ opacity:0.7;
     		</ul>	
     	</div> 
     </div>
-    <div class="contactme">
+    <div class="portfolio" id="portfolioid">
+    	<h1>My Portfolio</h1>
+    	<div class="project">
+    		<div class="projectimg">
+    			<img src="cleanit.jpg">
+    		</div>
+    		<div class="projectinfo">
+    		<h2>CleanIt</h2>
+    		<p>It is platform where Indians can organize cleanliness drive in their neighbourhood by creating a drive in our platform and other people can join this drives.</p>
+    		</div>
+    	</div>
+    	<div class="project project2">
+    		<div class="projectimg">
+    			<img src="webscraper.png">
+    		</div>
+    		<div class="projectinfo">
+    			<h2>Web Scraper</h2>
+    			<p>It scraps latest update from official website of SGSITS, Indore.
+    			Displays date of update published, update news, link to document related to that new update.</p>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="timelineouter" id="timelineid">
+    	<h1>My Timeline</h1>
+    <div class="timeline" >
+ 		 <div class="container left">
+		    <div class="content">
+		      <h2>2019-till date</h2>
+		      <p>Co-Ordinator #include (A techno learning club at Sgsits, Indore) </p>
+		    </div>
+		  </div>
+		  <div class="container right">
+		    <div class="content">
+		      <h2>2018-till date</h2>
+		      <p>Shri Govindram Sekseria Institute of Technology and Science, Indore</p>
+		    </div>
+		  </div>
+		  <div class="container left">
+		    <div class="content">
+		      <h2>2003-2018</h2>
+		      <p>Sophia Convent Senior Secondary School, Khandwa</p>
+		    </div>
+		  </div>
+	  </div>
+    </div>
+
+    <div class="contactme" id="contactmeid">
     	
     	<h1>Get in touch</h1>
     	<h4>Got a project you would like me to work on?<br/> Or how about just a friendly chat?</h4>
@@ -488,6 +133,9 @@ opacity:0.7;
     		<li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> (+91) 6260990386</a></li>
     	</ul>
     </div>
+    </div>
+    <div class="copyright">
+    	<p>&copy; Copyright | Kanak Agrawal | 2020</p>
     </div>
 </body>
 </html>
