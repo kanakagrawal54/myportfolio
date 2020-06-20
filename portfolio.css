@@ -323,7 +323,7 @@ opacity:0.7;
 	background-color:#C7C7C7;
     height:80%;
 	float: left;
-	margin-left:20%;
+	margin-left:10%;
 	box-shadow:7px 7px 6px grey;
 }
 .projectimg img{
@@ -377,8 +377,8 @@ opacity:0.7;
 		font-size:60px;
 	}
 	.project{
-		width:30%;
-		margin-left:12%;
+		width:28%;
+		margin-left:5%;
 	}
 }
 
@@ -505,7 +505,7 @@ opacity:0.7;
 		margin-left:5%;
 	}
 	.portfolio{
-		height:1400px;
+		height:1900px;
 		background-size:100% 1400px;
 	}
 	.project{
